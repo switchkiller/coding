@@ -1,0 +1,40 @@
+movi r1
+02
+movi r2 
+05
+movi r3
+01
+movi r0
+100
+loop1: movs r0
+store r1
+adi 
+01
+movd r0
+movs r1
+adi 
+01
+movd r1
+movs r2
+subi 
+01
+movd r2
+jmpdnz
+loop1
+movs r1
+subi
+02
+movd r1
+movd r2
+loop2: movs r0
+store r1
+adi 
+01
+movd r0
+movs r1
+subi 
+01
+movd r1
+jmpdnz
+loop2
+stop

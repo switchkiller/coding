@@ -1,0 +1,21 @@
+
+
+movi R1
+10
+movi R2
+10
+movs R1
+add R2
+movd R3
+stop
+
+
+
+
+
+
+
+
+
+
+

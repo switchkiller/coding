@@ -1,0 +1,11 @@
+movi r0
+50
+movi r1
+05
+movi r2
+60
+movs r0
+load r3
+movs r2
+store r3
+stop

@@ -1,0 +1,13 @@
+movi r1
+5
+movi r2
+5
+movs r2
+add r1
+jmpdu label
+movi r3
+5
+label:
+movi r3
+6
+stop

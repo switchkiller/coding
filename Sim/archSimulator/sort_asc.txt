@@ -1,0 +1,57 @@
+movi r0
+100
+movs r0
+load r0
+movs r0
+movd r5
+movi r1
+101
+movs r1
+load r10
+movi r2
+102
+movs r2
+load r4
+SORT:
+LOOP: 
+movs r10
+cmp r4
+cdp SWAP
+movs r2
+adi 
+01
+movd r2
+load r4
+movs r5
+sbi
+01
+movd r5
+cmi 
+00
+jmpdnz LOOP
+movs r1
+stor r10
+movs r1
+adi 
+01
+movd r1
+movs r2
+adi 
+01
+movd r2
+movs r0
+sbi 
+01
+movd r0
+cmi
+01
+jmpdnz SORT
+stop
+SWAP:
+movs r10
+movd r7
+movs r4
+movd r10
+movs r10
+movd r4
+retu

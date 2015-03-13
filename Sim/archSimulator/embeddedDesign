@@ -1,0 +1,120 @@
+strcpy(design_string,"ALU\n\
+nop	00000000\n\
+stop	00000001\n\
+adi	00000010\n\
+subi	00000011\n\
+ani	00000100\n\
+ori	00000101\n\
+xri	00000110\n\
+cmi	00000111\n\
+ret	00001\n\
+jmpd	11100\n\
+jmpr	11101\n\
+cd	11110\n\
+cr	11111\n\
+add	0001\n\
+sub	0010\n\
+xor	0011\n\
+and	0100\n\
+or	0101\n\
+cmp	0110\n\
+movs	0111\n\
+movd	1000\n\
+movi	1001\n\
+store	1010\n\
+load	1011\n\
+push	1100\n\
+pop	1101\n\
+END\n\
+Micro-Instructions\n\
+stop 1\n\
+\n\
+adi 3\n\
+EAR LOR\n\
+EPC LMR\n\
+IPC ERD SAF 0001 LAR RMS\n\
+subi 3\n\
+EPC LMR\n\
+IPC ERD LOR\n\
+EAR SAF 0010 LAR RMS\n\
+xri 3\n\
+EAR LOR\n\
+EPC LMR\n\
+IPC ERD SAF 0011 LAR RMS\n\
+ani 3\n\
+EAR LOR\n\
+EPC LMR\n\
+IPC ERD SAF 0100 LAR RMS\n\
+ori 3\n\
+EAR LOR\n\
+EPC LMR\n\
+IPC ERD SAF 0101 LAR RMS\n\
+cmi 3\n\
+EAR LOR\n\
+EPC LMR\n\
+IPC ERD SAF 0010 RMS\n\
+add 2\n\
+ERG LOR\n\
+EAR SAF 0001 LAR RMS\n\
+sub 2\n\
+ERG LOR\n\
+EAR SAF 0010 LAR RMS\n\
+xor 2\n\
+ERG LOR\n\
+EAR SAF 0011 LAR RMS\n\
+and 2\n\
+ERG LOR\n\
+EAR SAF 0100 LAR RMS\n\
+or 2\n\
+ERG LOR\n\
+EAR SAF 0101 LAR RMS\n\
+cmp 2\n\
+ERG LOR\n\
+EAR SAF 0010 RMS\n\
+movs 2\n\
+ERG LOR\n\
+SAF 1111 LOR LAR RMS\n\
+movd 1\n\
+EAR LRG RMS\n\
+load 2\n\
+EAR LMR\n\
+ERD LRG RMS\n\
+store 2\n\
+EAR LMR\n\
+ERG LWR RMS\n\
+push 3\n\
+DSP\n\
+ESP LMR\n\
+ERG LWR RMS\n\
+pop 2\n\
+ESP LMR\n\
+ISP ERD LRG RMS\n\
+movi 2\n\
+EPC LMR\n\
+ERD IPC LRG RMS\n\
+jmpd 3\n\
+EPC LMR\n\
+IPC SFL RMS\n\
+ERD LPC RMS\n\
+jmpr 2\n\
+SFL RMS\n\
+EAR LPC RMS\n\
+cd 6\n\
+EPC LMR \n\
+IPC SFL RMS\n\
+ERD LOR DSP\n\
+ESP LMR\n\
+EPC LWR\n\
+EOR LPC RMS\n\
+cr 5\n\
+RMS SFL\n\
+DSP\n\
+ESP LMR\n\
+EPC LWR\n\
+EAR LPC RMS\n\
+ret 3\n\
+RMS SFL\n\
+ESP LMR\n\
+ISP ERD LPC RMS\n\
+END\n\
+");

@@ -1,0 +1,17 @@
+movi r1
+12
+movs r1
+cru
+movi r5
+32
+movi r3
+0
+movs r5
+add r3
+store r3
+stop
+movi r3
+-1
+push r3
+pop r2
+retu

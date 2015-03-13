@@ -1,0 +1,5 @@
+#!/bin/csh
+
+
+cat $1 | sed "s/\(.*\)/\1\\n\\/" | awk 'BEGIN {printf "strcpy(design_string,\""} {print $0} END {printf "\");\n"}' > embeddedDesign
+

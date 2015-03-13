@@ -1,0 +1,29 @@
+movi r0
+100
+movi r1
+9
+loop:
+cdu
+swapVal
+movs r0
+adi
+1
+movd r0
+movs r1
+subi
+2
+movd r1
+subi
+1
+jmpdm
+loop
+stop
+swapVal:
+movs r0
+load r2
+add  r1
+load r3
+store r2
+movs r0
+store r3
+retu

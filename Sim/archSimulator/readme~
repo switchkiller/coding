@@ -1,0 +1,9 @@
+
+
+To start using the prgram follow these steps:
+
+(a) In this folder execute the command ' g++ prog1.cpp ' .
+
+(b) Now execute the following command ' ./a.out' .
+
+And the program will start to execute .

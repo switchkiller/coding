@@ -1,0 +1,33 @@
+movi r0
+85
+cdu
+xCountOne
+stop
+xCountOne:
+movi r3
+8
+movi r4
+0
+movi r1
+1
+loop:
+movs r0
+and r1
+jmpdz
+notOne
+movs r4
+adi
+1
+movd r4
+notOne:
+movs r1
+add r1
+movd r1
+movs r3
+subi
+1
+movd r3
+jmpdnz
+loop
+retu
+

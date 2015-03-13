@@ -1,0 +1,25 @@
+movi r0
+100
+movi r1
+03
+movs r0
+load r2
+cdu
+TEST
+stop
+TEST: movi r4
+00
+LOOP: movs r2
+cmi 
+00
+jmpdz
+YES
+subi 
+03
+movd r2
+jmpdnz
+LOOP
+retu
+YES: movi r4
+01
+retu

@@ -1,0 +1,11 @@
+movi r1
+10
+movi r2
+10
+movs r1
+add r2
+movd r3
+movi AR
+00
+
+stop

@@ -1,0 +1,57 @@
+movi r1
+00
+movi r2
+00
+movi r0
+70
+movi r4
+04
+loop1: cdu
+next
+movs r1
+adi 
+01
+movd r1
+movd r2
+cmp r4
+jmpdnz
+loop1
+movs r4
+add r4
+adi 
+01
+movd r4
+loop2: cdu
+next
+movs r2
+subi
+01
+movd r2
+movs r1
+adi
+01
+movd r1
+cmp r4
+jmpdnz
+loop2
+movi r2
+00
+loop3: cdu
+next
+movs r1
+subi
+01
+movd r1
+movd r4
+jmpdnz
+loop3
+stop
+next: movs r0
+store r1
+adi
+01
+store r2
+adi
+01
+movd r0
+retu

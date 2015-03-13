@@ -1,0 +1,9 @@
+movi r1
+05
+movs r1
+subi 
+01
+movd r1
+jmpdnz 
+02
+stop

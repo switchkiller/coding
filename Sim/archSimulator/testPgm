@@ -1,0 +1,17 @@
+movi r1
+15
+movi r2
+05
+movs r1
+or r2
+movs r1
+and r2
+movs r1
+add r2
+movs r1
+sub r2
+movs r1
+xor r2
+movs r1
+cmp r2
+stop

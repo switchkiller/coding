@@ -1,0 +1,5 @@
+movi AR
+10
+adi 
+10
+stop

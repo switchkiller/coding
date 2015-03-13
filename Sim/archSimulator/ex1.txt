@@ -1,0 +1,14 @@
+movi r1
+01
+movi r2
+10
+cdu 
+next
+movs r2
+subi
+01
+movd r2
+jmpdz
+loop1
+next: retu
+loop1: stop

@@ -1,0 +1,46 @@
+movi r1
+100
+movi r2
+200
+movi r3
+210
+movi r4
+15
+movs r1
+load r5
+movs r5
+ani 
+01
+jmpdnz
+31
+movs r2
+store r5
+adi 
+01
+movd r2
+movs r1
+adi
+01
+movd r1
+movs r4
+subi
+01
+movd r4
+jmpdnz
+08
+stop
+movs r3
+store r5
+adi
+01
+movd r3
+movs r1
+adi
+01
+movd r1
+movs r4
+subi
+01
+jmpdnz
+08
+stop

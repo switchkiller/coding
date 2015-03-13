@@ -1,0 +1,24 @@
+
+To start using the prgram follow these steps:
+
+--------------------------------------------------
+To supply own design file, program file, etc
+
+(a) In this folder execute the command ' g++ prog1.cpp -o archSim'
+(b) Execute the following command ' ./archSim'
+
+
+--------------------------------------------------
+To use an embedded design file that implements the instruction
+set covered in the class:
+
+(a) In this folder execute the command 'g++ prog2.cpp -o stdArchSim'
+(b) Execute the following command ' ./stdArchSim'
+
+
+Note: Only the executables are to be installed on the mirage
+      server for students' use. They should test the tutorial
+      and other lab problems using "stdArchSim". They can try
+      executing these and other problems using "archSim" with
+      own microprogram design for each opcode.
+--------------------------------------------------

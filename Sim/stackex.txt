@@ -1,0 +1,19 @@
+movi SP
+101
+movi r1
+95
+movi r0
+16
+loop1: movs r1
+load r2
+push r2
+subi
+01
+movd r1
+movs r0
+subi
+01
+movd r0
+jmpdnz
+loop1
+stop

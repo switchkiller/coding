@@ -1,0 +1,8 @@
+movi r1
+1
+movs r1
+movi r2
+9
+add r2
+movd r4
+stop
